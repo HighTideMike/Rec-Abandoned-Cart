@@ -1,11 +1,6 @@
 @IsTest
 public class BatchLeadFromAbandonedCartTest {
-    /*
-    static {
-		TREX1__App_Config__c setting = new TREX1__App_Config__c();
-		setting.TREX1__Max_Draft_Transaction_Age_Days__c = 1;
-		insert setting;
-	}*/
+
 
     @IsTest static void testBatchMinus1Day() {
         TREX1__Transaction__c trans = [SELECT Id, Createddate FROM TREX1__Transaction__c LIMIT 1];
